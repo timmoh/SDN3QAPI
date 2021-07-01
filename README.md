@@ -56,6 +56,10 @@ UNLINK /api/v2/projects/{ProjectId}/pipeline/{FileId}/fileformat/{FileFormatId} 
 
 PUT /api/v2/projects/{ProjectId}/pipeline/{FileId}/watermarkpicture Put a WatermarkPicture to Pipeline Asset
 
+**2.4 Project Usage**
+
+GET /api/v2/projects/{ProjectId}/usage Return project used resources. Parameters: 'Start' [YYYY-MM-DD] Reporting period from, 'End' [YYYY-MM-DD] Reporting period to, 'Resolution' ['month'|'day'] Detail of the data.
+
 **3.0 Channels**
 
 ✅ GET /api/v2/channels Return a collection of available Channels
@@ -121,6 +125,9 @@ PUT /api/v2/projects/{ProjectId}/pipeline/{FileId}/watermarkpicture Put a Waterm
 
 ✅ PUT /api/v2/channels/{ChannelId}/distributions/{ChannelDistributionId}/StartStop Starts or stops a ChannelDistribution
 
+**3.7 Channel Purge Timeshift**
+
+✅ GET /api/v2/channels/{ChannelId}/timeshift/purge Creates a Job to Purge Timeshift
 
 **4.0 Files**
 
